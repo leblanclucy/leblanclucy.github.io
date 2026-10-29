@@ -1,6 +1,6 @@
 ---
 layout: default
-title: MD, or How to Simulate the Motion and Binding of Molecules
+title: MD, or How to Simulate Molecular Motion
 ---
 
   Using Newtonian physics to calculate the trajectories of all atoms in a system over time.<br> Citation: Eastman P, Galvelis R, Peláez RP, 
