@@ -1,2 +1,2 @@
 # leblanclucy.github.io
-Portfolio for data science, bioinformatics, and computational chemistry.
+Portfolio and tutorials for data science, bioinformatics, and computational chemistry.
