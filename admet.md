@@ -29,6 +29,9 @@ title: ADMET, or How to Predict Small Molecule Toxicity
       <pre><code>admet_predict --data_path [input_filename].csv --save_path [desired_output_filename].csv --smiles_column smiles</code></pre>
       You can make radial summaries of key properties using their Python scripts:
       <pre><code>python plot_radial_summaries.py --data_path [output_from_admet].csv --save_dir radialplot --image_type png</code></pre>
+      You can also graph your top hits against known DrugBank molecules on a scatterplot (can change x and y_property to other properties like LogP):
+      <pre><code>python plot_drugbank_reference.py --data_path [output_from_admet].csv --save_path [output.]png --x_property "Clinical Toxicity" --y_property "Human Intestinal Absorption"</code></pre>
+      It is recommended to save as .svg rather than .png for publication-quality images.
     <p><h2 id="header-3">Results Interpretation</h3><p>
     The outputs are probabilities ("What's the probability this molecule is carcinogenic?") and percentiles ("Compared to all reference molecules this
       neural network was trained on, how carcinogenic is this molecule predicted to be?"). 
