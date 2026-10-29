@@ -1,3 +1,14 @@
+lsi: false
+safe: true
+source: main
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
 title: Data Science by LeBlanc
 description: Adventures in bioinformatics, computational chemistry, and data visualization.
 url: "https://leblanclucy.github.io/"
