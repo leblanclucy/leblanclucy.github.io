@@ -2,9 +2,6 @@
 layout: default
 title: ADMET, or How to Predict Small Molecule Toxicity
 ---
-<!DOCTYPE html>
-<html>
-<body>
   Prediction of absorption, distribution, metabolism, excretion, and toxicity of drug candidates.
   <p><h2 id="header-3">Installing ADMET-AI</h3><p>
     Though the <a href="https://admet.ai.greenstonebio.com/">web server</a> works, <a href="https://github.com/swansonk14/admet_ai">installing it locally</a> 
@@ -27,5 +24,3 @@ title: ADMET, or How to Predict Small Molecule Toxicity
     <br>Alternatively, obtain SMILES by looking up the ZINC ID
     in <a href="https://cartblanche22.docking.org/">Carteblanche</a> or with curl, supplying a list of ZINC IDs as input:
     <pre><code>curl -X POST https://cartblanche22.docking.org/substances.txt -F zinc_ids=@[file name here].txt -F output_fields='smiles,zinc_id'</code></pre>
-</body>
-</html>
