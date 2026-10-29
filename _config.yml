@@ -13,6 +13,7 @@ title: Data Science by LeBlanc
 description: Adventures in bioinformatics, computational chemistry, and data visualization.
 url: "https://leblanclucy.github.io/"
 
+theme: slate
 remote_theme: pages-themes/slate@v0.2.0
 plugins:
 - jekyll-remote-theme
