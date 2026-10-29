@@ -26,13 +26,13 @@ title: ADMET, or How to Predict Small Molecule Toxicity
     <pre><code>curl -X POST https://cartblanche22.docking.org/substances.txt -F zinc_ids=@[file name here].txt -F output_fields='smiles,zinc_id'</code></pre>
     <p><h2 id="header-3">Analyzing Compounds and Visualizing Results</h3><p>
       To perform predictions, run this code in the terminal:
-      <code>admet_predict --data_path [input_filename].csv --save_path [desired_output_filename].csv --smiles_column smiles</code>
+      <pre><code>admet_predict --data_path [input_filename].csv --save_path [desired_output_filename].csv --smiles_column smiles</code></pre>
       You can make radial summaries of key properties using their Python scripts:
-      <code>python plot_radial_summaries.py --data_path [output_from_admet].csv --save_dir radialplot --image_type png</code>
+      <pre><code>python plot_radial_summaries.py --data_path [output_from_admet].csv --save_dir radialplot --image_type png</code></pre>
     <p><h2 id="header-3">Results Interpretation</h3><p>
     The outputs are probabilities ("What's the probability this molecule is carcinogenic?") and percentiles ("Compared to all reference molecules this
       neural network was trained on, how carcinogenic is this molecule predicted to be?"). 
       Unless you have a pharmacology background, some of the output may be unfamiliar to you. I recommend reading 
-      <a href="https://admetmesh.scbdd.com/static/explanation/files/Explanation.pdf">their own explainer</a> which goes in depth as to what these mean.<br>
+      <a href="https://admetmesh.scbdd.com/static/explanation/files/Explanation.pdf">their own explainer</a> which goes in depth as to what these mean.
       I personally prioritize high bioavailability, moderate lipophilicity, minimizing violations of Lipinski's rule, and as low as possible scores for clinical toxicity,
       carcinogenicity, and hERG inhibition, but since these are all probabilistic, you will really have to decide and test for yourself eventually.
