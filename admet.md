@@ -4,11 +4,11 @@ title: ADMET, or How to Predict Small Molecule Toxicity
 ---
 <html>
   Prediction of absorption, distribution, metabolism, excretion, and toxicity of drug candidates.
-  <p><h2 id="header-3">Installing ADMET-AI</h3><p>
+  <p><h3 id="header-3">Installing ADMET-AI</h3><p>
     Though the <a href="https://admet.ai.greenstonebio.com/">web server</a> works, <a href="https://github.com/swansonk14/admet_ai">installing it locally</a> 
       gives you more customization and data.
     <pre><code>pip install admet-ai</code></pre>
-  <p><h2 id="header-3">Preparing Input Files</h3><p>
+  <p><h3 id="header-3">Preparing Input Files</h3><p>
     Make a .csv file with one column using 'smiles' as the column header. Each row is the SMILES of whatever compound you're using as input.
     If you did molecular docking with Vina, SMILES can be found from the output .pdbqt file.
     If you know the ligand you're interested in, you can look up the SMILES on <a href="https://www.rcsb.org/">RCSB PDB</a>.
@@ -25,7 +25,7 @@ title: ADMET, or How to Predict Small Molecule Toxicity
     <br>Alternatively, obtain SMILES by looking up the ZINC ID
     in <a href="https://cartblanche22.docking.org/">Carteblanche</a> or with curl, supplying a list of ZINC IDs as input:
     <pre><code>curl -X POST https://cartblanche22.docking.org/substances.txt -F zinc_ids=@[file name here].txt -F output_fields='smiles,zinc_id'</code></pre>
-    <p><h2 id="header-3">Analyzing Compounds and Visualizing Results</h3><p>
+    <p><h3 id="header-3">Analyzing Compounds and Visualizing Results</h3><p>
       To perform predictions, run this code in the terminal:
       <pre><code>admet_predict --data_path [input_filename].csv --save_path [desired_output_filename].csv --smiles_column smiles</code></pre>
       You can make radial summaries of key properties using their Python scripts:
@@ -33,7 +33,7 @@ title: ADMET, or How to Predict Small Molecule Toxicity
       You can also graph your top hits against known DrugBank molecules on a scatterplot (can change x and y_property to other properties like LogP):
       <pre><code>python plot_drugbank_reference.py --data_path [output_from_admet].csv --save_path [output.]png --x_property "Clinical Toxicity" --y_property "Human Intestinal Absorption"</code></pre>
       It is recommended to save as .svg rather than .png for publication-quality images.
-    <p><h2 id="header-3">Results Interpretation</h3><p>
+    <p><h3 id="header-3">Results Interpretation</h3><p>
     The outputs are probabilities ("What's the probability this molecule is carcinogenic?") and percentiles ("Compared to all reference molecules this
       neural network was trained on, how carcinogenic is this molecule predicted to be?"). 
       Unless you have a pharmacology background, some of the output may be unfamiliar to you. I recommend reading 
