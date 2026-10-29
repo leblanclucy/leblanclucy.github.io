@@ -4,6 +4,7 @@ title: ADMET, or How to Predict Small Molecule Toxicity
 ---
 <html>
   Prediction of absorption, distribution, metabolism, excretion, and toxicity of drug candidates.
+  Citation: Swanson K, Walther P, Leitz J, Mukherjee S, Wu JC, Shivnaraine RV, Zou J. ADMET-AI: a machine learning ADMET platform for evaluation of large-scale chemical libraries. Bioinformatics. 2024 Jul 1;40(7):btae416. doi: 10.1093/bioinformatics/btae416.
   <p><h3 id="header-3">Installing ADMET-AI</h3><p>
     Though the <a href="https://admet.ai.greenstonebio.com/">web server</a> works, <a href="https://github.com/swansonk14/admet_ai">installing it locally</a> 
       gives you more customization and data.
