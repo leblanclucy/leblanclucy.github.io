@@ -1,4 +1,4 @@
 ---
 layout: default
-title: ADMET: Predicting Toxicity
+title: ADMET, or How to Predict Small Molecule Toxicity
 ---
