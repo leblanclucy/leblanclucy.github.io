@@ -14,7 +14,6 @@ title: ADMET, or How to Predict Small Molecule Toxicity
     If you did molecular docking with Vina, SMILES can be found from the output .pdbqt file.
     If you know the ligand you're interested in, you can look up the SMILES on <a href="https://www.rcsb.org/">RCSB PDB</a>.
     Though several SMILES formats exist, this program was robust to accept the ones I tested (ACDLabs, CACTVS).
-    <p></p>
     <table>
   <tr>
     <th>smiles</th>
@@ -23,7 +22,7 @@ title: ADMET, or How to Predict Small Molecule Toxicity
     <td>Cn1cnc2N(C)C(=O)N(C)C(=O)c12</td>
   </tr>
 </table>
-    <br>Alternatively, obtain SMILES by looking up the ZINC ID
+    Alternatively, obtain SMILES by looking up the ZINC ID
     in <a href="https://cartblanche22.docking.org/">Carteblanche</a> or with curl, supplying a list of ZINC IDs as input:
     <pre><code>curl -X POST https://cartblanche22.docking.org/substances.txt -F zinc_ids=@[file name here].txt -F output_fields='smiles,zinc_id'</code></pre>
     <p><h3 id="header-3">Analyzing Compounds and Visualizing Results</h3><p>
@@ -33,12 +32,12 @@ title: ADMET, or How to Predict Small Molecule Toxicity
       <pre><code>python plot_radial_summaries.py --data_path [output_from_admet].csv --save_dir radialplot --image_type png</code></pre>
       You can also graph your top hits against known DrugBank molecules on a scatterplot (can change x and y_property to other properties like LogP):
       <pre><code>python plot_drugbank_reference.py --data_path [output_from_admet].csv --save_path [output.]png --x_property "Clinical Toxicity" --y_property "Human Intestinal Absorption"</code></pre>
-      It is recommended to save as .svg rather than .png for publication-quality images.
+      I recommend that you <b>save as .svg rather than .png</b> for publication-quality images.
     <p><h3 id="header-3">Results Interpretation</h3><p>
     The outputs are probabilities ("What's the probability this molecule is carcinogenic?") and percentiles ("Compared to all reference molecules this
       neural network was trained on, how carcinogenic is this molecule predicted to be?"). 
       Unless you have a pharmacology background, some of the output may be unfamiliar to you. I recommend reading 
-      <a href="https://admetmesh.scbdd.com/static/explanation/files/Explanation.pdf">their own explainer</a> which goes in depth as to what these mean.
+      <a href="https://admetmesh.scbdd.com/static/explanation/files/Explanation.pdf">their own explainer</a> which goes in depth as to what these mean.<br>
       I personally prioritize high bioavailability, moderate lipophilicity, minimizing violations of Lipinski's rule, and as low as possible scores for clinical toxicity,
       carcinogenicity, and hERG inhibition, but since these are all probabilistic, you will really have to decide and test for yourself eventually.
 </html>
