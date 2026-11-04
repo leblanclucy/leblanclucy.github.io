@@ -15,5 +15,5 @@ title: MD, or How to Simulate Molecular Trajectories
     If OpenMM cannot connect to your GPU, you may have to update CUDA (or ROCm) or update GPU drivers.
   <p><h3 id="header-3">Preparing Proteins</h3><p>
   <p><h3 id="header-3">Preparing Ligands</h3><p>
-  <p><h3 id="header-3">References for Further Reading</p>
+  <p><h3 id="header-3">References for Further Reading</h3></p>
 Citation: Eastman P, Galvelis R, Peláez RP, Abreu CRA, Farr SE, Gallicchio E, Gorenko A, Henry MM, Hu F, Huang J, Krämer A, Michel J, Mitchell JA, Pande VS, Rodrigues JP, Rodriguez-Guerra J, Simmonett AC, Singh S, Swails J, Turner P, Wang Y, Zhang I, Chodera JD, De Fabritiis G, Markland TE. OpenMM 8: Molecular Dynamics Simulation with Machine Learning Potentials. 
