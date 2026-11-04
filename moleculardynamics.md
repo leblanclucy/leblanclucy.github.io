@@ -16,4 +16,4 @@ title: MD, or How to Simulate Molecular Trajectories
   <p><h3 id="header-3">Preparing Proteins</h3><p>
   <p><h3 id="header-3">Preparing Ligands</h3><p>
   <p><h3 id="header-3">References for Further Reading</h3></p>
-Citation: Eastman P, Galvelis R, Peláez RP, Abreu CRA, Farr SE, Gallicchio E, Gorenko A, Henry MM, Hu F, Huang J, Krämer A, Michel J, Mitchell JA, Pande VS, Rodrigues JP, Rodriguez-Guerra J, Simmonett AC, Singh S, Swails J, Turner P, Wang Y, Zhang I, Chodera JD, De Fabritiis G, Markland TE. OpenMM 8: Molecular Dynamics Simulation with Machine Learning Potentials. 
+Eastman P, Galvelis R, Peláez RP, Abreu CRA, Farr SE, Gallicchio E, Gorenko A, Henry MM, Hu F, Huang J, Krämer A, Michel J, Mitchell JA, Pande VS, Rodrigues JP, Rodriguez-Guerra J, Simmonett AC, Singh S, Swails J, Turner P, Wang Y, Zhang I, Chodera JD, De Fabritiis G, Markland TE. OpenMM 8: Molecular Dynamics Simulation with Machine Learning Potentials. <i></i>J Phys Chem B. 2024</i> Jan 11;128(1):109-116. doi: 10.1021/acs.jpcb.3c06662.
