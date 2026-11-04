@@ -4,8 +4,7 @@ title: ADMET, or How to Predict Small Molecule Toxicity
 ---
 <html>
   Prediction of absorption, distribution, metabolism, excretion, and toxicity of drug candidates.
-  Citation: Swanson K, Walther P, Leitz J, Mukherjee S, Wu JC, Shivnaraine RV, Zou J. ADMET-AI: a machine learning ADMET platform for evaluation of large-scale chemical libraries. <i>Bioinformatics.</i> 2024 Jul 1;40(7):btae416. doi: 10.1093/bioinformatics/btae416.
-  <p><h3 id="header-3">Installing ADMET-AI</h3><p>
+<p><h3 id="header-3">Installing ADMET-AI</h3><p>
     Though the <a href="https://admet.ai.greenstonebio.com/">web server</a> works, <a href="https://github.com/swansonk14/admet_ai">installing it locally</a> 
       gives you more customization and data.
     <pre><code>pip install admet-ai</code></pre>
@@ -40,4 +39,6 @@ title: ADMET, or How to Predict Small Molecule Toxicity
       <a href="https://admetmesh.scbdd.com/static/explanation/files/Explanation.pdf">their own explainer</a> which goes in depth as to what these mean.<br>
       I personally prioritize high bioavailability, moderate lipophilicity, minimizing violations of Lipinski's rule, and as low as possible scores for clinical toxicity,
       carcinogenicity, and hERG inhibition, but since these are all probabilistic, you will really have to decide and test for yourself eventually.
+        <p><h3 id="header-3">References for Further Reading</h3></p>
+  Swanson K, Walther P, Leitz J, Mukherjee S, Wu JC, Shivnaraine RV, Zou J. ADMET-AI: a machine learning ADMET platform for evaluation of large-scale chemical libraries. <i>Bioinformatics.</i> 2024 Jul 1;40(7):btae416. doi: 10.1093/bioinformatics/btae416.
 </html>
